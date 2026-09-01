@@ -1,0 +1,5 @@
+easyocr==1.7.2
+opencv-python>=4.8
+pytesseract>=0.3.13
+supervision>=0.18
+ultralytics>=8.0

@@ -1,0 +1,8 @@
+numpy
+supervision
+ultralytics
+easyocr==1.7.2
+pytesseract==0.3.13
+# Keep the GUI build last: EasyOCR declares opencv-python-headless, whose cv2
+# files otherwise replace waitKey/imshow on Windows.
+opencv-python==4.13.0.92

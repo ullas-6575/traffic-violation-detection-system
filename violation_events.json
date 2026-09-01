@@ -10,33 +10,16 @@
     "events": []
   },
   "speed_estimation": {
-    "total_valid": 2,
+    "total_valid": 0,
     "up_count": 0,
-    "down_count": 2,
+    "down_count": 0,
     "discarded": 0,
     "violations": 0,
-    "average_speed": 8.0,
+    "average_speed": 0,
     "speed_limit": 60.0,
     "real_distance_m": 3.0,
-    "pixels_per_meter": 66.7,
-    "measurements": [
-      {
-        "track_id": 18,
-        "direction": "down",
-        "speed_kmh": 9.7,
-        "violation": false,
-        "frames": 33.39,
-        "time_s": 1.113
-      },
-      {
-        "track_id": 17,
-        "direction": "down",
-        "speed_kmh": 6.3,
-        "violation": false,
-        "frames": 51.41,
-        "time_s": 1.714
-      }
-    ]
+    "pixels_per_meter": 200.0,
+    "measurements": []
   },
   "red_light_detection": {
     "total_violations": 0,
