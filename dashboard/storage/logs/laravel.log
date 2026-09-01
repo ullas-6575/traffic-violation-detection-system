@@ -1,0 +1,23 @@
+[2026-07-03 10:25:13] local.ERROR: The "intl" PHP extension is required to use the [format] method. {"exception":"[object] (RuntimeException(code: 0): The \"intl\" PHP extension is required to use the [format] method. at E:/ISD/app/vendor/laravel/framework/src/Illuminate/Support/Number.php:453)
+[stacktrace]
+#0 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Support/Number.php(38): Illuminate/Support/Number::ensureIntlExtensionIsInstalled()
+#1 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Support/Number.php(216): Illuminate/Support/Number::format(80, 2, NULL)
+#2 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Database/Console/TableCommand.php(231): Illuminate/Support/Number::fileSize(80, 2)
+#3 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Database/Console/TableCommand.php(199): Illuminate/Database/Console/TableCommand->displayForCli(Array)
+#4 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Database/Console/TableCommand.php(100): Illuminate/Database/Console/TableCommand->display(Array)
+#5 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/TableCommand->handle(Object(Illuminate/Database/DatabaseManager))
+#6 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#7 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#8 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#9 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#10 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#11 E:/ISD/app/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#12 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#13 E:/ISD/app/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#14 E:/ISD/app/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Database/Console/TableCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#15 E:/ISD/app/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#16 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#17 E:/ISD/app/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#18 E:/ISD/app/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#19 {main}
+"} 

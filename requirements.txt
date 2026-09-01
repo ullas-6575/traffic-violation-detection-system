@@ -1,7 +1,21 @@
-opencv-python
+# Traffic Violation Detection System — Python dependencies
+# Tested versions used during development are pinned where it matters
+# (EasyOCR/OpenCV compatibility). Raspberry Pi OS (64-bit, Bookworm) + Python 3.11.
+
 numpy
-ultralytics
-supervision
-pytesseract
-torch
-git+https://github.com/ultralytics/ultralytics.git
+ultralytics>=8.0
+supervision>=0.18
+opencv-python==4.13.0.92
+easyocr==1.7.2
+pytesseract==0.3.13
+mysql-connector-python==9.7.0
+
+# Notes:
+# - EasyOCR pulls in torch/torchvision. On Raspberry Pi 5 (aarch64) use the
+#   official PyTorch aarch64 wheels — see README.md "Raspberry Pi setup".
+# - opencv-python (GUI build) is intentionally installed *after* EasyOCR's own
+#   opencv-python-headless dependency, otherwise headless cv2 silently removes
+#   imshow/waitKey. `pip install -r requirements.txt` already installs in the
+#   order listed above, so no extra step is needed.
+# - Tesseract itself (the `tesseract` binary) and its Bengali language pack are
+#   OS packages, not pip packages — see README.md.

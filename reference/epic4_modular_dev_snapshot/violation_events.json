@@ -1,0 +1,30 @@
+{
+  "rule_engine": {
+    "total_events": 0,
+    "overspeed_count": 0,
+    "red_light_count": 0,
+    "combined_count": 0,
+    "unique_vehicles": 0,
+    "cooldown_frames": 90,
+    "speed_limit_kmh": 60.0,
+    "events": []
+  },
+  "speed_estimation": {
+    "total_valid": 0,
+    "up_count": 0,
+    "down_count": 0,
+    "discarded": 0,
+    "violations": 0,
+    "average_speed": 0,
+    "speed_limit": 60.0,
+    "real_distance_m": 3.0,
+    "pixels_per_meter": 100.0,
+    "measurements": []
+  },
+  "red_light_detection": {
+    "total_violations": 0,
+    "up_violations": 0,
+    "down_violations": 0,
+    "violations": []
+  }
+}
