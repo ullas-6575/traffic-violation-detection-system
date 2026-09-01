@@ -1,0 +1,7 @@
+opencv-python
+numpy
+ultralytics
+supervision
+pytesseract
+torch
+git+https://github.com/ultralytics/ultralytics.git
